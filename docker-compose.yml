@@ -34,6 +34,6 @@ services:
       ME_CONFIG_BASICAUTH_PASSWORD: mongoadmin
       ME_CONFIG_MONGODB_ADMINUSERNAME: mongoadmin
       ME_CONFIG_MONGODB_ADMINPASSWORD: mongoadmin
-      ME_CONFIG_MONGODB_URL: mongo://admin:admin@mongo:27017/
+      ME_CONFIG_MONGODB_URL: mongo://mongoadmin:mongoadmin@mongo:27017/
     depends_on:
       - mongo
