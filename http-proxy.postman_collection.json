@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "3d75a96f-5bbf-4158-8835-388ec07c5e2d",
+		"name": "http-proxy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33669280"
+	},
+	"item": [
+		{
+			"name": "Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/requests/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"requests",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/requests/66f6f171a2fcebada51a9b65/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"requests",
+						"66f6f171a2fcebada51a9b65",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Repeat request by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/repeat/66f6f171a2fcebada51a9b65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"repeat",
+						"66f6f171a2fcebada51a9b65"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
