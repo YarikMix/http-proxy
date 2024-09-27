@@ -20,8 +20,7 @@ app.get("/requests", async (req, res) => {
 
 app.get("/requests/:id", async (req, res) => {
     const { id } = req.params;
-    const mongoId = new ObjectId(id);
-    const request = await requestCollection.findOne({ _id: mongoId });
+    const request = await requestCollection.findOne({ _id: new ObjectId(id) });
     res.json(request);
 });
 
